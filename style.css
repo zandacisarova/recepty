@@ -1,0 +1,116 @@
+body {
+    width: 100%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+header {
+    height: auto;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(../images/pozadi1.jpg) ;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigace {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+ .menu {
+     cursor: pointer;
+     padding: 0;
+     margin: 0;
+ }
+
+ .personal {
+     cursor: pointer;
+     padding: 0;
+     margin: 0;
+ }
+.nazev {
+    color: white;
+    text-shadow: 0 3px 8px #000;
+    
+}
+
+.logo {
+    padding: 3rem;
+    padding-top: 1rem;    
+}
+
+.vyhledavac {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.vyhledavacPole {
+    width: 80%;
+    height: 20px;
+    text-align: center;
+    border: none;
+}
+.tydenniNabidka {
+     padding: 1rem;
+     padding-top: 0.5rem;
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+     background: #006D77;
+     
+     
+ }
+
+.tyden {
+    width: 80%;
+    margin-top: 0.5rem;
+    background: f0ebe8;
+    border: none;
+    box-shadow: 0 0 5px black;
+    border-radius: 3px;
+    padding: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: #006D77;
+}
+ .tyden:hover {
+     background: #e4ddd8;
+     color: #013d42;
+ }
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 7pt;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(../images/pozadi1.jpg) ;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+footer a {
+    cursor: pointer;
+    font-weight: 700;
+    color: white;   
+}
+
+footer p {
+    color: white;
+}
+
