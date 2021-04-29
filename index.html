@@ -13,21 +13,58 @@
 <body>
     <header>
         <nav class="navigace">
-            <img class="horniLista menu" src="../images/menu.svg" width="40px" height="40px">
 
+            <img class="horniLista burgerMenu" id="burgerMenu" onclick="myFunction()" src="../images/menu.svg" width="40px" height="40px">
+            <!--<script>
+                function myFunction() {
+                    document.getElementById("burgerMenu").addClassList(".menuPoRozkliknuti");
+                }
+            </script>-->
             </img>
-            <h1 class="horniLista nazev">COOKIO</h1>
+            
+            <h1 class="horniLista nazev" id="nazevLogo" onclick="myFunction()">COOKIO</h1>
+            <img class="logo480" src="../images/chilli.svg" width="40px" height="40px">
+            <!--<script>
+                document.getElementById("nazevLogo").style.color = "black";
+            </script>-->
+
             <img class="horniLista personal" src="images/personal.svg" width="40px" height="40px">
 
             </img>
         </nav>
+        <nav class="navigace480">
+            <a class="seznam"href="#">Recepty</a>
+            <a class="seznam" href="#">Blog</a>
+            <a class="seznam" href="#">Sezónní kuchyně</a>
+            <a class="seznam" href="#">Kontakt</a>
+        
+
+        </nav>
         <img class="logo" src="../images/chilli.svg" width="100px" height="100px">
 
         </img>
+        <div class="druhaNav">
+            <nav class="tydenniNabidka480">
+                <button class="receptTydne tyden">
+                <a>Recept týdne</a>
+                </button>
+                <button class="moucnikTydne tyden">
+                <a>Moučník týdne</a>
+                </button>
+                <button class="veganTydne tyden">
+                <a>Vegan týdne</a>
+                </button>
+            </nav>
+            <form class="vyhledavac480" action=" ">
+                <input class="vyhledavacPole" type="text" id="vyhledavacReceptu" name="vyhledavac" placeholder="který recept hledáte?" >
+    
+            </form>
+        </div>
         <form class="vyhledavac" action=" ">
             <input class="vyhledavacPole" type="text" id="vyhledavacReceptu" name="vyhledavac" placeholder="který recept hledáte?" >
 
         </form>
+
     </header>
 
     <main class="tydenniNabidka">
@@ -41,6 +78,22 @@
             <a>Vegan týdne</a>
         </button>
     </main>
+    
+    <main class="main480">
+        <aside class="asideRecepty">
+        <a class="doSekci" href="#">Masové pokrmy</a>
+        <a class="doSekci" href="#">Vegetariánské recepty</a>
+        <a class="doSekci" href="#">Veganské recepty</a>
+        <a class="doSekci" href="#">Polévky</a>
+        <a class="doSekci" href="#">Předkrmy</a>
+        <a class="doSekci" href="#">Deserty</a>
+        <a class="doSekci" href="#">Moučníky</a>
+        <a class="doSekci" href="#">Nápoje</a>
+        <a class="doSekci" href="#">Slavnostní hostina</a>
+        </aside>
+    </main>
+
+    
 
     <footer>
         <a class="kontakt">Kontakt</a>
