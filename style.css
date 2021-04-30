@@ -92,7 +92,7 @@ header {
 .tyden {
     width: 80%;
     margin-top: 0.5rem;
-    background: var(--grey3);
+    background: var(--grey1);
     border: none;
     box-shadow: 0 0 5px black;
     border-radius: 3px;
@@ -100,10 +100,12 @@ header {
     font-weight: 700;
     cursor: pointer;
     color: var(--grey2);
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
 }
  .tyden:hover {
-     background: var(--grey4);
-     color: white;
+     background: var(--grey3);
+     font-size: 11pt;
  }
 
 footer {
@@ -169,6 +171,7 @@ footer p {
         display: flex;
         width: 100%;
         background: var(--grey1);
+
         justify-content: space-around;
         align-items: center;
         margin: 0 0 1rem 0;
@@ -184,6 +187,16 @@ footer p {
         text-shadow: 0 0 2px rgb(255, 255, 255);
 
     }
+
+    .seznam:hover {
+        text-shadow: 
+        1.8px -1.8px 0 var(--grey1),
+        0 -1px 0 var(--grey1),
+        3.3px -2.3px 0 var(--grey2),
+        0.5px -2.1px 0 var(--grey2),
+        1.5px 0 0 var(--grey2);
+    }
+
 
     .logo {
         display: none;
@@ -212,6 +225,7 @@ footer p {
     }
 
     .vyhledavac480 {
+        width: 30%;
         padding-left: 1rem;
         display: flex;
         justify-content: flex-end;
@@ -222,12 +236,14 @@ footer p {
     }
 
     .druhaNav {
+        width: 100%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .tydenniNabidka480 {
-        width: 80%;
+        width: 70%;
+        max-width: 800px;
         padding: 0.3rem 0.3rem;
         padding-bottom: 0.8rem;
         display: flex;
@@ -237,6 +253,7 @@ footer p {
         justify-content: space-around;
         align-items: center;
         margin-top: -0.5rem;
+       
     }
 
     .tyden {
@@ -247,6 +264,12 @@ footer p {
         flex-flow: row nowrap;
         justify-content: center;
         align-self: center;
+        box-shadow: 
+        1.5px 1.5px 3px var(--grey4),
+        -1.5px -1.5px 5px white;
+    }
+
+    .tydenPismo {
         font-weight: bold;
     }
     
@@ -254,6 +277,7 @@ footer p {
     .main480 {
         padding: 0.5rem 1rem;
         background: var(--grey1);
+        display: flex;
     }
 
     .asideRecepty {
@@ -271,24 +295,101 @@ footer p {
         font-weight: bold;
         text-decoration: none;
         padding: 0.2rem 0.5rem;
-        background: var(--grey3);
+        /*background: var(--grey3);*/
         color: var(--grey2);
         display: flex;
         justify-content: flex-start;
         align-items: center;
         margin: 0.15rem;
-        box-shadow: 0 0 2px var(--grey2);
+        
         border-radius: 3px;
         
 
     }
 
     .doSekci:hover {
-        background: var(--grey4);
-        color: white;
+        background: var(--grey3);
+        /*box-shadow: 0 0 2px var(--grey2);*/
+        font-size: 11pt;
+        
+    }
+
+    .polozky {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        /*border: 1px solid black;*/
+        margin: 0 -0.5rem 0 0.5rem;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        cursor: pointer;
+        
+        
+        
+    }
+
+    .article {
+        
+        /*border: 1px solid black;*/
+        width: 20%;
+        height: 30%;
+        margin: 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        padding: 0;
+
     }
 
     
+
+    .articlePic {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/images/eggs.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px 5px 0 0;
+        
+    }
+
+    .article:hover .articlePic{
+        background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url(/images/eggs.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .article:hover .articleSekce {
+        color: var(--grey2);
+    }
+
+    
+
+    .articleSekce {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 8pt;
+        margin: 0.3rem;
+        font-weight: bold;
+        color: var(--grey4);
+        
+    }
+
+    
+
+
+    .article:hover {
+        background: var(--grey3);
+    }
 
   
 
