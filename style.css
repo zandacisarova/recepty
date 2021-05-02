@@ -286,7 +286,7 @@ footer p {
 
     .asideRecepty {
         width: 180px;       
-        display: flex;
+        display: block;
         flex-flow: column nowrap;
         justify-content: space-around;  
         background: var(--grey1);
@@ -319,7 +319,7 @@ footer p {
     }
 
     .polozky {
-        width: 100%;
+        /*width: 100%;*/
         height: auto;
         display: flex;
         flex-flow: row wrap;
@@ -327,8 +327,9 @@ footer p {
         margin: 0 -0.5rem 0 0.5rem;
         justify-content: center;
         align-items: center;
-        overflow: auto;
+        /*overflow: auto;*/
         cursor: pointer;
+        padding-bottom: 0.5rem;
         
         
         
